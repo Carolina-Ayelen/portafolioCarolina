@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Carolina Calviño</title>
+    <meta name="keywords" content="paginas web, desarrollo web, diseño web, diseño">
+    <meta name="description" content="Diseño de Páginas Web">
+    <meta name="author" content="Carolina Ayelen Calviño">
+    <!--Css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href='css/main.css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <!--iconos-->
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="js/smooth-scroll.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- nav vertical-->
+        <div class="contenedor position-fixed wow animate fadeInLeft">
+            <img src="img/logo.svg" width="60px" height="60px" alt="logo" class="logo">
+            <div class="navbar"></div>
+            <div id="sidebar" class="sidebar">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="contenido" class="burger">
+                <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><span>Menú</span><img src="img/menu.svg" alt="menu"></a>
+                <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()"><span>Menú</span><img src="img/menu.svg" alt="menu"></a>
+            </div>
+
+        </div>
+
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+            <div class="container-fluid">
+                <img src="img/logo.svg" width="60px" height="60px" alt="logo" class="logo">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container div-header wow animate fadeInLeft" data-wow-delay="1s">
+            <span>Diseño Web</span>
+            <h1>Mostrale a tus clientes aquello que desean ver</h1>
+            <p>Creamos tu Sitio Web Personalizado</p>
+        </div>
+
+        <!--nav redes-->
+        <nav class="navbar navbar-light bg-dark nav-redes ">
+            <div class="container-fluid">
+                <ul>
+                    <li class="nav-item" id="continuar">
+                        <a class="nav-left wow animate fadeInDown" data-wow-delay="1s" data-wow-duration="1s" href="#about"><i class="bi bi-arrow-down"></i>Continuar</a>
+                    </li>
+                </ul>
+
+                <ul class="nav justify-content-end redes ">
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://wa.me/5491168313308?text=Hola,%20necesito%20información"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/carolina-calviño-a9974515b/"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="mailto:carolinaayelencalvi@hotmail.com"><i class="bi bi-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://www.instagram.com/ddc_web/"><i class="bi bi-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+            <section id="about">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4  contenido">
+                            <div class="espacio-about"></div>
+                            <h2 class="h2-about">Sobre mí</h2>
+                            <p>Mi nombre es Carolina Calviño Diseñadora Web y Programadora, y me encantaria ayudarte a crear y mejorar tu sitio web a través del diseño y la pasión. </p>
+                        </div>
+                        <div class="col-md-8 imagen">
+                            <img src=" img/laptop-2.jpg " alt="laptop " class="img-fluid wow animate fadeInDown" data-wow-duration="2s ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="servicios">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-md-6 imagen-contenido ">
+                            <img src="img/pc.png " alt="laptop " class="img-fluid wow animate fadeInRight" data-wow-duration="2s">
+                        </div>
+                        <div class="col-md-6 contenido ">
+                            <h3>01<span class="wow animate fadeInDown" data-wow-duration="2s ">/02</span></h3>
+                            <div class="espacio "></div>
+                            <h2>Web Design</h2>
+                            <p>Juntos crearemos el mejor diseño conforme a tu negocio.<br> Moderno
+                                <br> Original
+                                <br> Adaptado a distintos dispositivos<br> Rediseño de páginas web </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-md-6 contenido ">
+                            <h3>02<span>/02</span></h3>
+                            <div class="espacio "></div>
+                            <h2>Diseño Digital</h2>
+                            <p>Nos ocupamos de todo. <br> Logos
+                                <br> Imagenes
+                                <br> Identidad corporativa </p>
+                        </div>
+                        <div class="col-md-6 imagen-contenido ">
+                            <img src="img/pc-dos.png " alt="laptop " class="img-fluid wow animate fadeInUp" data-wow-duration="2s">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="proyectos" id="portfolio">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-md-4 contenido wow animate fadeInLeft" data-wow-duration="2s">
+                            <div class="espacio-about"></div>
+                            <h4><span> Si lo ves en tu mente está en tus manos</span> <br><br>Trabajamos personalmente con cada cliente para ofrecerle la mejor atención satifaciendo sus necesidades y deseos.</h4>
+                            <div class="espacio-boton "></div>
+                            <a target="_blank" href="http://wa.me/5491168313308?text=Hola,%20necesito%20información"><button type="submit " class="btn btn-primary wow animate fadeInLeft" data-wow-delay="1s">Contactar</button></a>
+                        </div>
+                        <div class="col-md-8 contenido ">
+                            <h2 class="portafolio ">Portafolio</h2>
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <a href="https://ddcweb.com.ar/proyectouno/"><img src="img/proyecto-uno.jpg " class="d-block w-100 " alt="Seguridad a tus pies"></a>
+                                        <div class="espacio "></div>
+                                        <div class="carousel-caption d-none d-md-block ">
+                                            <h5>Seguridad a tus pies</h5>
+                                            <p>Landing page responsive con acceso a Ecommerce, conexión a Whatsapp y envío de Formulario de Contacto</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <a href="https://ddcweb.com.ar/proyectodos/"><img src="img/proyecto-dos.jpg " class="d-block w-100 " alt="Diseño web"></a>
+                                        <div class="espacio "></div>
+                                        <div class="carousel-caption d-none d-md-block ">
+                                            <h5>Makhalu-ac</h5>
+                                            <p>Página Web bilingüe mediante Php, con conexión a Whatsapp y formulario de Contacto</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="https://tomasbotet.com.ar"><img src="img/proyecto-tres.jpg " class="d-block w-100 " alt="Diseño web "></a>
+                                        <div class="espacio "></div>
+                                        <div class="carousel-caption d-none d-md-block ">
+                                            <h5>Tomás Botet</h5>
+                                            <p>Página Web con Ecommerce, responsive, de productos descargables. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="contact" id="contact">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-md-6 contenido ">
+                                <form action="envia.php" method="post">
+                                    <h5>Comunicate con Nosotros</h5>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Nombre</label>
+                                        <input type="text " name="nombre" class="form-control " id="exampleFormControlInput1 " placeholder="Nombre ">
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Email</label>
+                                        <input type="email " name="email" class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlInput1 " class="form-label ">Teléfono</label>
+                                        <input type="text " name="telefono" class="form-control " id="exampleFormControlInput1 " placeholder="Teléfono ">
+                                    </div>
+                                    <div class="mb-3 ">
+                                        <label for="exampleFormControlTextarea1 " class="form-label ">Mensaje</label>
+                                        <textarea class="form-control " name="consulta" id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                                    </div>
+                                    <div class="d-grid gap-2 ">
+                                        <button type="submit " class="btn btn-primary enviar ">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6 contenido wow animate slideInRight" data-wow-duration="1s">
+                                <h2 class="contacto ">Contacto</h2>
+                                <h3>¿Tenes un proyecto en mente? Nosotros podemos hacerlo realidad.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iconos ">
+                    <ul class="nav justify-content-end ">
+                        <li class="nav-item ">
+                            <a class="nav-link " target="_blank" href="http://wa.me/5491168313308?text=Hola,%20necesito%20información"><i class="bi bi-whatsapp fo "></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " target="_blank" href="https://www.linkedin.com/in/carolina-calviño-a9974515b/"><i class="bi bi-linkedin fo "></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " target="_blank" href="mailto:carolinaayelencalvi@hotmail.com"><i class="bi bi-envelope fo "></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " target="_blank" href="https://www.instagram.com/ddc_web/"><i class="bi bi-instagram fo "></i></a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-end ">
+                        <li>
+                            <p class="copy ">© 2021 All Rights Reserved DDC Web <br> Design: Carolina Ayelen Calviño</p>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+        </main>
+        <script>
+            $(document).ready(function() {
+                $('.carousel').carousel({
+                    interval: 2000
+                })
+            });
+        </script>
+    </body>
+
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8 " crossorigin="anonymous "></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="js/wow.min.js "></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="# "]');
+    </script>
+</body>
+
+
+</html>

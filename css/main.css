@@ -1,0 +1,426 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    font: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #474747;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+    font-family: 'Farro', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Farro', sans-serif;
+    color: #fc2772;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+h4 h5 h6 {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/*menu vertical*/
+
+div.navbar {
+    height: 100vh;
+    background: black;
+}
+
+.contenedor {
+    width: 70px;
+    background-color: black;
+}
+
+div.burger {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    top: 300px;
+    left: 2px;
+    cursor: pointer;
+    transform: rotate( 270deg);
+}
+
+div.burger span {
+    color: #ffffff;
+}
+
+div.burger span:hover {
+    color: #fc2772;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #121416e0;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul,
+.sidebar li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width: 200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #fff;
+    background-color: #fc2772;
+}
+
+#contenido {
+    transition: margin-left .4s;
+}
+
+.abrir-cerrar {
+    color: transparent;
+    font-size: 1rem;
+}
+
+.abrir-cerrar:hover {
+    color: #fc2772;
+}
+
+#abrir {}
+
+#cerrar {
+    display: none;
+}
+
+
+/*menu horizontal*/
+
+.bg-nav {
+    background-color: transparent!important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 14px;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #fc2772 !important;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/fondo-header.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.div-header {
+    width: 50%;
+    margin: 6rem;
+    height: auto;
+    color: white;
+}
+
+.div-header span {
+    color: #fc2772;
+}
+
+.div-header h1 {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .div-header {
+        width: 70%;
+    }
+}
+
+.div-header p {
+    color: #d3d3d3;
+    margin-top: 2rem;
+}
+
+
+/*nav redes*/
+
+.nav-redes {
+    background-color: black !important;
+    margin-left: 4rem;
+}
+
+.nav-redes .nav-link {
+    margin: 0;
+}
+
+.nav-redes .nav-left {
+    color: #fc2772;
+    text-decoration: none;
+    margin: -20px;
+}
+
+.bi {
+    font-size: 1.2rem;
+}
+
+.bi-arrow-down {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-redes {
+        background-color: transparent !important;
+    }
+    .redes {
+        margin-bottom: 2rem;
+    }
+    #continuar {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 996px) {
+    .div-header {
+        margin: 2rem 0 2rem 6rem;
+    }
+}
+
+.redes {
+    padding-right: 2rem;
+}
+
+
+/*Secciones*/
+
+.contenido {
+    padding-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+.espacio-about {
+    width: 100%;
+    height: 200px;
+}
+
+.imagen-contenido {
+    background: rgb(209, 209, 209);
+    background: linear-gradient(133deg, rgba(209, 209, 209, 1) 0%, rgba(255, 255, 255, 0.7665441176470589) 100%);
+}
+
+.espacio {
+    width: 100%;
+    height: 80px;
+}
+
+.espacio-boton {
+    width: 100%;
+    height: 40px;
+}
+
+.proyectos h4 span {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.portafolio {
+    margin-top: 2rem;
+}
+
+.imagen {
+    padding-right: 0;
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin-top: 4rem;
+    }
+    .espacio-about {
+        display: none;
+    }
+    section {
+        margin-bottom: 2rem;
+    }
+    .h2-about {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .proyectos h4 span {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .proyectos h4 {
+        font-size: 18px;
+    }
+    .imagen {
+        display: none;
+    }
+    .espacio-about {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+/*footer*/
+
+.contact {
+    background-color: black;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: -90px;
+    margin-top: 50px;
+    box-shadow: 5px 10px 5px 0px rgba(164, 161, 161, 0.75);
+    -webkit-box-shadow: 5px 10px 5px 0px rgba(164, 161, 161, 0.75);
+    -moz-box-shadow: 5px 10px 5px 0px rgba(164, 161, 161, 0.75);
+}
+
+.contacto {
+    margin: 5rem 0rem 5rem 0rem;
+}
+
+footer {
+    background-color: transparent;
+}
+
+footer h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.iconos {
+    width: 100%;
+    height: 100px;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+.fo {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.fo:hover {
+    color: #fc2772;
+}
+
+.contact h5 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.enviar {
+    margin-top: 2rem;
+}
+
+.iconos .nav-link {
+    margin: 0;
+}
+
+.copy {
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        margin: 8rem 0rem 5rem 0rem;
+    }
+    form {
+        margin-right: 2rem;
+    }
+    .fo {
+        font-size: 1.2rem;
+    }
+}
+
+
+/*mensaje*/
+
+.mensaje {
+    padding: 2rem;
+    text-align: center;
+}
+
+.mensaje h1 {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(rgb(124, 124, 124), #fc2772);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(0, 0, 0);
+}
