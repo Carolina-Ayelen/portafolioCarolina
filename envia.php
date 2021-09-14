@@ -1,28 +1,51 @@
 ﻿<?php
-$remitente = $_POST['email'];
-$destinatario = 'carolinaayelencalvi@hotmail.com';
-$asunto = 'Consulta Web'; 
-if (!$_POST){
-?>
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-<?php
-}else{
-	 
-    $cuerpo = "Nombre y apellido: " . $_POST["nombre"] . "\r\n"; 
-    $cuerpo .= "Email: " . $_POST["email"] . "\r\n";
-    $cuerpo .= "Telefono: " . $_POST["telefono"] . "\r\n";
-    $cuerpo .= "Consulta: " . $_POST["consulta"] . "\r\n";
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
 
 
-    $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/plain; charset=utf-8\n";
-    $headers .= "X-Priority: 3\n";
-    $headers .= "X-MSMail-Priority: Normal\n";
-    $headers .= "X-Mailer: php\n";
-    $headers .= "From: \"".$_POST['nombre']." \" <".$remitente.">\n";
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
-    mail($destinatario, $asunto, $cuerpo, $headers);
+try {
+     //variables form
+     if (isset($_POST['enviar'])){
+
+     $nombre = $_POST['nombre'];
+     $email = $_POST['email'];
+     $telefono = $_POST['telefono'];
+     $asunto = $_POST['asunto'];
+     $consulta = $_POST['consulta'];
+    //Server settings
+   // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+    $mail->Username = 'carolinaayelencalvino@gmail.com';                     //SMTP username
+    $mail->Password = 'carolina2112';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom($email);
+    $mail->addAddress('carolinaayelencalvino@gmail.com');     //Add a recipient
     
-    include 'confirmar.html'; 
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'Mensaje de DDC WEB';
+    $mail->Body    = 'Nombre: '.$nombre  .'<br>'. 'Email: '. $email . '<br>'. 'Teléfono: ' . $telefono . '<br>'.'Asunto: ' . $asunto . '<br>'. 'Mensaje: ' . $consulta;
+
+    $mail->send();
+    echo 'Mensaje enviado con exito';
+    echo'<script type="text/javascript">
+    window.location.href="https://www.ddcweb.com.ar/confirmar.html";</script>';    }
+} catch (Exception $e) {
+    echo "Error al enviar su mensaje: {$mail->ErrorInfo}";
 }
+
 ?>
+
